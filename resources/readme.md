@@ -19,7 +19,7 @@
 
 - `Tplay_All.main.zip` - 3rd (modified `tata-sky-m3u-main.zip`) - No account (generate link from API)
 
-- `fdf2s1d-main.zip` (copy of `Tplay_All.main.zip`) ( [Vercel App](https://fdf2s1d.vercel.app/) )
+- `fdf2s1d-main.zip` (copy of `Tplay_All.main.zip`) ( [Vercel App 1](https://fdf2s1d.vercel.app/) [Vercel App 2](https://3f2d6m.vercel.app/))
 
 > TODO :
 
