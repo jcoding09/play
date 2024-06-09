@@ -1,13 +1,36 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Redirecting...</title>
     <script type="text/javascript">
-        window.location.href = 'https://amitb3669.github.io/t20.m3u/';
+        // URLs to redirect to
+        const url1 = "https://fdf2s1d.vercel.app/api/getM3u?sid=tplay_A&id=123456789&sname=tataP&tkn=xeotpxyastrplg";
+        const url2 = "https://amitb3669.github.io/t20.m3u/";
+        const url3 = "https://3f2d6m.vercel.app/api/getM3u?sid=tplay_A&id=123456789&sname=tataP&tkn=xeotpxyastrplg";
+
+        // Function to get the current URL to redirect to
+        function getNextURL() {
+            // Get the preferred URL from local storage
+            const preferredURL = localStorage.getItem("preferredURL");
+
+            // If no preferred URL is set, default to url1
+            return preferredURL || url1;
+        }
+
+        // Function to set the preferred URL
+        function setPreferredURL(url) {
+            localStorage.setItem("preferredURL", url2);
+        }
+
+        // Redirect to the preferred URL
+        window.location.href = getNextURL();
     </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href = 'https://amitb3669.github.io/t20.m3u/'>link</a>.</p>
+    <p>If you are not redirected automatically, follow this <a id="redirect-link" href="#">link</a>.</p>
+    <script type="text/javascript">
+        // Set the href attribute of the link for users with disabled JavaScript
+        document.getElementById("redirect-link").href = getNextURL();
+    </script>
 </body>
 </html>
